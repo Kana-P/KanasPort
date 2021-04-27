@@ -16,6 +16,10 @@
       crossorigin="anonymous"
     />
     <script
+      src="https://kit.fontawesome.com/3437ca9b77.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
       crossorigin="anonymous"
@@ -56,86 +60,137 @@
     </nav>
 
     <!-- Contents -->
-    <section class="anchor" id="aboutSection">
+    <section id="aboutSection">
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-4" style="background: pink">
             <img src="img/Kana.png" class="img-fluid" />
           </div>
           <div class="col-lg-8" style="background: gray">
-            <h1>About</h1>
+            <h1 style="margin-bottom: 30px">About</h1>
             <h4>Personal Info</h4>
-            ชื่อ คณาพงษ์ ศิริประชัย ชื่อเล่น แบงค์/คะน้า เพศ ชาย
-            วัน/เดือน/ปีเกิด 3 มีนาคม พ.ศ.2543
+            <table>
+              <tr>
+                <th class="subhead">ชื่อ</th>
+                <th class="subhead">ชื่อเล่น</th>
+                <th class="subhead">เพศ</th>
+              </tr>
+              <tr>
+                <td>คณาพงษ์ ศิริประชัย</td>
+                <td>แบงค์/คะน้า</td>
+                <td>ชาย</td>
+              </tr>
+              <tr>
+                <td class="subhead">Eve</td>
+                <td class="subhead">Jackson</td>
+                <td class="subhead">94</td>
+              </tr>
+            </table>
+            <!-- <div class="row">
+              <div class="col-sm-3">
+                <p class="subhead">ชื่อ<i class="bi bi-telephone-fill"></i></p>
+                <p style="margin-bottom: 5px;">คณาพงษ์ ศิริประชัย</p>
+                <p class="subhead">ชื่อเล่น<i class="bi bi-telephone-fill"></i></p>
+                <p style="margin-bottom: 5px;">แบงค์/คะน้า</p>
+                <p class="subhead">เพศ<i class="bi bi-telephone-fill"></i></p>
+                <p style="margin-bottom: 5px;">ชาย</p>
+                <p class="subhead">วัน/เดือน/ปีเกิด<i class="bi bi-telephone-fill"></i></p>
+                <p style="margin-bottom: 5px;">3 มีนาคม พ.ศ.2543</p>
+              </div>
+            </div> -->
           </div>
         </div>
       </div>
     </section>
 
     <!-- Projects -->
-    <section class="anchor" id="ProjectSection">
+    <section id="ProjectSection">
       <div class="container-fluid" style="background: paleturquoise">
         <h1>Projects</h1>
-        <div class="row">
-          <div class="col-sm-6 col-lg-4">
-            <div style="width: 250px; margin: auto">
-              <div style="width: 250px; height: 250px; background: red"></div>
-              <h4 style="text-align: center">Forlorn</h4>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa
-                nobis ex nostrum ducimus provident, laboriosam tenetur dolorum,
-                aperiam soluta odit iusto quos! Numquam voluptatem, fuga
-                cupiditate necessitatibus mollitia obcaecati distinctio.
-              </p>
+        <p style="margin-bottom: 0px; padding-bottom: 30px; text-align: center;">คลิกที่รูปภาพเพื่อดูรายละเอียดของโปรเจค</p>
+      </div>
+      <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href="Forlorn.html"><img src="img/ForlornPoster.png" class="d-block w-100"></a>
+            <div class="carousel-caption d-none d-sm-block">
+              <h5>Forlorn</h5>
+              <p>โปรเจคสร้างเกม 3 มิติโดยใช้ Unreal Engine</p>
             </div>
           </div>
-          <div class="col-sm-6 col-lg-4">
-            <div style="width: 250px; margin: auto">
-              <div style="width: 250px; height: 250px; background: red"></div>
-              <h4 style="text-align: center">Myosotis</h4>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa
-                nobis ex nostrum ducimus provident, laboriosam tenetur dolorum,
-                aperiam soluta odit iusto quos! Numquam voluptatem, fuga
-                cupiditate necessitatibus mollitia obcaecati distinctio.
-              </p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <div style="width: 250px; margin: auto">
-              <div style="width: 250px; height: 250px; background: red"></div>
-              <h4 style="text-align: center">Coming Soon</h4>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa
-                nobis ex nostrum ducimus provident, laboriosam tenetur dolorum,
-                aperiam soluta odit iusto quos! Numquam voluptatem, fuga
-                cupiditate necessitatibus mollitia obcaecati distinctio.
-              </p>
+          <div class="carousel-item">
+            <a href="Myosotis.html"><img src="img/MyosotisPoster.png" class="d-block w-100"></a>
+            <div class="carousel-caption d-none d-sm-block" style="color: black;">
+              <h5>Myosotis</h5>
+              <p>โปรเจคสร้าง Landscape ของเกมโดยใช้ Unreal Engine</p>
             </div>
           </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </section>
 
     <!-- Contact -->
-    <section class="anchor" id="contactSection">
+    <section id="contactSection">
       <div class="container">
-        <h1>Contact</h1>
-        <div style="width: 60%; margin: auto; background: pink;">
+        <h1 style="margin-bottom: 30px">Contact</h1>
+        <div style="width: 70%; margin: auto auto 50px auto">
           <div class="row">
-            <div class="col">
-              <p><i class="bi bi-telephone-fill"></i>+66 0877079902</p>
-              <p>
-                <i class="bi bi-envelope-fill"></i
-                >kanapong.siriprachai@gmail.com
+            <div class="col-lg">
+              <p class="subhead">
+                เบอร์โทรศัพท์<i class="bi bi-telephone-fill"></i>
               </p>
+              <p>+66 0877079902</p>
+            </div>
+            <div class="col-lg">
+              <p class="subhead">อีเมล์<i class="bi bi-envelope-fill"></i></p>
+              <p>kanapong.siriprachai@gmail.com</p>
+            </div>
+            <div class="col-lg">
+              <p class="subhead">ที่อยู่<i class="bi bi-house-fill"></i></p>
               <p>
-                <i class="bi bi-house-fill"></i>154/55 หมู่ 5 ถนนบางกรวย-ไทรน้อย
-                ตำบลบางกรวย อำเภอบางกรวย จังหวัดนนทบุรี 11130
+                154/55 หมู่ 5 ถนนบางกรวย-ไทรน้อย ตำบลบางกรวย อำเภอบางกรวย
+                จังหวัดนนทบุรี 11130
               </p>
             </div>
           </div>
+          <div class="socialLink">
+            <a href="https://www.facebook.com/kanapong.siriprachai/"
+              ><i
+                class="fab fa-facebook fa-3x"
+                style="padding: 10px; color: #3b5998"
+              ></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/kanapong-siriprachai-436136170/"
+              ><i
+                class="fab fa-linkedin fa-3x"
+                style="padding: 10px; color: #0077b5"
+              ></i
+            ></a>
+            <a
+              href="https://www.youtube.com/channel/UC7C0l-hxtNVxRUhgI8hPCWg/featured"
+              ><i
+                class="fab fa-youtube fa-3x"
+                style="padding: 10px; color: #ff0000"
+              ></i
+            ></a>
+          </div>
         </div>
+        <p style="text-align: center">
+          Kana's Port © 2021 Kanapong Siriprachai, All rights reserved.
+        </p>
       </div>
     </section>
 

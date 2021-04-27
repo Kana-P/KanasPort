@@ -44,6 +44,16 @@ i {
   padding: 10px;
 }
 
+.subhead {
+  text-align: left;
+  margin-bottom: 5px;
+  font-family: ThaiSansNeue-Bold;
+}
+
+.socialLink {
+  text-align: center;
+  margin: 10px;
+}
 
 /* Navbar */
 nav {
