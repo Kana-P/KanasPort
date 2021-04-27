@@ -1,0 +1,54 @@
+/* Fonts */
+@font-face {
+  font-family: ThaiSansNeue-Regular;
+  src: url("fonts/ThaiSansNeue-Regular.ttf");
+}
+@font-face {
+  font-family: ThaiSansNeue-Bold;
+  src: url("fonts/ThaiSansNeue-Bold.ttf");
+}
+@font-face {
+  font-family: ThaiSansNeue-Black;
+  src: url("fonts/ThaiSansNeue-Black.ttf");
+}
+
+/* General */
+* {
+  font-family: ThaiSansNeue-Regular;
+  font-size: 24px;
+}
+
+body {
+  padding-top: 50px;
+}
+
+.landingCard {
+  width: 100%;
+  height: 100vh;
+  background: grey;
+}
+
+.landingTitle {
+  font-family: ThaiSansNeue-Black;
+  font-size: 100px;
+}
+
+/* Navbar */
+nav {
+  height: 50px;
+}
+
+.logo {
+  color: white;
+  font-family: ThaiSansNeue-Bold;
+  font-size: 32px;
+  margin: 0 0 0 20px;
+}
+
+.navmenu {
+  margin: 0 auto;
+}
+
+.ham {
+  margin: 0 20px 0 auto;
+}
