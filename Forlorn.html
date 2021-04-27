@@ -24,8 +24,91 @@
       integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
       crossorigin="anonymous"
     ></script>
+    <style>
+      body {
+        background: black;
+      }
+      .content {
+        margin-top: 80px;
+        padding: 30px;
+        background: hsla(0, 89%, 28%, 0.5);
+        color: white;
+        border-radius: 10px;
+      }
+      .iframe-container {
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%;
+        height: 0;
+      }
+      .iframe-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      .btn{
+        background: hsla(0, 89%, 28%, 1);
+        color: white;
+      }
+    </style>
   </head>
   <body>
+    <!-- Nav -->
+    <nav
+      class="navbar justify-content-center navbar-expand-sm fixed-top"
+      style="background: hsla(0, 89%, 28%, 1)"
+    >
+      <!-- Logo -->
+      <div class="logo" onclick="location.href='portfolio.html';">
+        Kana's Port
+      </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="container">
+      <div class="content">
+        <img src="img/ForlornPoster.png" class="img-fluid" />
+        <div style="padding: 30px">
+          <h1 style="padding-top: 10px">Forlorn</h1>
+          <p>
+            &emsp;&emsp;Forlorn เป็นเกม 3 มิติแนว RPG-Horror
+            โดยเรื่องราวมีอยู่ว่า "คุระยามิ" เด็กหนุ่มชั้นมัธยมต้น
+            เขานั้นมักตื่นมาในฝันร้ายและถูกเด็กสาวปริศนาคอยตามฆ่าเขาอยู่เสมอ
+            ทุกครั้งที่เขาถูกฆ่า ตัวเขาก็จะตื่นมาพบกับฝันร้ายอีกครั้ง
+            ทุกอย่างเกิดขึ้นซ้ำไปมาจนคุระยามิเริ่มไม่ทนที่จะถูกฆ่าง่ายๆ อีกต่อไป
+            เขาจึงเริ่มสำรวจฝันร้ายเพื่อตามหาทางออกและต้นเหตุของฝันร้ายเหล่านี้
+            ผู้เล่นจะได้รับบทเป็นคุระยามิและมีหน้าที่คอยช่วยเหลือเขา
+            เพื่อตามหาเบาะแสของต้นตอของฝันร้าย เกมนีมีทั้งหมด 3 ฉากจบด้วยกัน
+            โดยฉากจบที่ได้ขึ้นอยู่กับจำนวนเบาะแสที่ผู้เล่นพบระหว่างเล่นเกม
+          </p>
+          <p>
+            &emsp;&emsp;โปรเจคนี้เป็นโปรเจค 5 คน ผมรับหน้าที่ coding
+            หรือเขียนโปรแกรมให้กับระบบต่างๆ ของเกม
+            นอกจากนี้แล้วผมยังทำหน้าที่แต่งเนื้อเรื่องและออกแบบหนึ่งในตัวละครหลัก
+            เกมนี้สร้างขึ้นโดยใช้ Unreal Engine
+          </p>
+          <div class="iframe-container">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/CJ37MiRY8TQ"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <div style="margin: 50px; text-align: center">
+        <a class="btn" href="portfolio.html" role="button"
+          >กลับสู่หน้าหลัก</a
+        >
+      </div>
+    </div>
     <!-- Scripts -->
     <script src="script.js"></script>
   </body>

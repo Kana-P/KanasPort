@@ -24,8 +24,123 @@
       integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
       crossorigin="anonymous"
     ></script>
+    <style>
+      body {
+        background: 	#f3fafd;
+      }
+      .content {
+        margin-top: 80px;
+        padding: 30px;
+        background: hsla(78, 36%, 80%, .5);
+        color: black;
+        border-radius: 10px;
+      }
+      .iframe-container {
+        position: relative;
+        width: 100%;
+        margin-top: 30px;
+        padding-bottom: 56.25%;
+        height: 0;
+      }
+      .iframe-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      .btn {
+        background: #D4DFBB;
+        color: black;
+      }
+    </style>
   </head>
   <body>
+    <!-- Nav -->
+    <nav
+      class="navbar justify-content-center navbar-expand-sm fixed-top"
+      style="background: #D4DFBB"
+    >
+      <!-- Logo -->
+      <div class="logo" style="color: black;" onclick="location.href='portfolio.html';">
+        Kana's Port
+      </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="container">
+      <div class="content">
+        <img src="img/MyosotisPoster.png" class="img-fluid" />
+        <div style="padding: 30px">
+          <h1 style="padding-top: 10px">Myosotis</h1>
+          <p>
+            &emsp;&emsp;นักผจญภัยคนหนึ่งได้ตื่นขึ้นมาในอีกฝากหนึ่งของภูเขาที่ทางเข้าถูกปิดกั้น
+            และไม่มีผู้คนสัญจรผ่านมานานนับหลายปี
+            ตัวเขานั้นได้พบกับทิวทัศน์ที่งดงาม
+            อีกทั้งยังได้พบกับผองเพื่อนของเขาที่ได้ล่วงลับไปแล้ว
+            นักผจญภัยจึงคิดว่าที่นี่เป็นเหมือนดังสวรรค์ที่เขาจะได้ใช้เวลากับคนที่เขาผูกพัน
+            แต่กลับไม่รู้ว่าดินแดนแห่งนี้กำลังกัดกินชีวิตของเขาอย่างช้าๆ
+          </p>
+          <p>
+            &emsp;&emsp;เรื่องราวของดินแดนลึกลับแห่งนี้ มีที่มาจากดอก Myosotis
+            ซึ่งเป็นชื่อของดอกไม้ หรือในอีกชื่อหนึ่งคือ Forget Me Nots
+            ในภาษาดอกไม้ Myosotis จะสื่อถึงรักแท้, ความจริงใจ,
+            และความสัมพันธ์ที่ยืนยาว นอกจากนี้แล้ว Myosotis เป็นดอกไม้ที่มีพิษ
+            แม้ลักษณะจะดูเหมือนไม่มีพิษภัย Landscape นี้ถูกสร้างขึ้นโดยใช้ Unreal Engine
+          </p>
+          <div id="LandscapeSlide" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#LandscapeSlide" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#LandscapeSlide" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#LandscapeSlide" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#LandscapeSlide" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#LandscapeSlide" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/image01.png" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="img/image02.png" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="img/image03.png" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="img/image04.png" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="img/image05.png" class="d-block w-100">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#LandscapeSlide" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#LandscapeSlide" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <div class="iframe-container">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/-_ugDn0qSn8"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <div style="margin: 50px; text-align: center">
+        <a class="btn" href="portfolio.html" role="button">กลับสู่หน้าหลัก</a>
+      </div>
+    </div>
     <!-- Scripts -->
     <script src="script.js"></script>
   </body>

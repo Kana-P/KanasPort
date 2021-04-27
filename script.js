@@ -9,11 +9,13 @@ function HamOpen() {
         ham.classList.remove("stage0");
         ham.classList.add("fa-times");
         ham.classList.remove("fa-bars");
+        ham.classList.remove("d-lg-none");
     } else if (hamburger.classList.contains("stage1")){
         sidebar.style.right = "-300px";
         ham.classList.add("stage0");
         ham.classList.remove("stage1");
         ham.classList.add("fa-bars");
         ham.classList.remove("fa-times");
+        ham.classList.add("d-lg-none");
     }
 ;}
