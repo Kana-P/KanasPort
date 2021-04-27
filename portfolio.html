@@ -26,11 +26,18 @@
     ></script>
   </head>
   <body>
-    <div class="sidebar" id="side" style="padding-top: 50px;">
+    <!-- Sidebar -->
+    <div class="sidebar" id="side" style="padding-top: 50px">
       <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link" href="#aboutSection"
             ><i class="bi bi-person-fill" style="color: white"></i>About</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#SkillSection"
+            ><i class="bi bi-star-fill" style="color: white"></i
+            >Skills</a
           >
         </li>
         <li class="nav-item">
@@ -62,6 +69,12 @@
             >
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="#SkillSection"
+              ><i class="bi bi-star-fill" style="color: white"></i
+              >Skills</a
+            >
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#ProjectSection"
               ><i class="bi bi-file-earmark-text-fill" style="color: white"></i
               >Projects</a
@@ -76,48 +89,77 @@
       </div>
 
       <!-- Hamburger -->
-      <i class="ham fas fa-bars d-lg-none stage0" id="ham" onclick="HamOpen()"></i>
+      <i
+        class="ham fas fa-bars d-lg-none stage0"
+        id="ham"
+        onclick="HamOpen()"
+      ></i>
     </nav>
 
     <!-- Contents -->
     <section id="aboutSection">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-4" style="background: pink">
+          <div
+            class="col-lg-4 align-items-end"
+            style="background: hsl(251, 8%, 65%)"
+          >
             <img src="img/Kana.png" class="img-fluid" />
           </div>
-          <div class="col-lg-8" style="background: gray">
-            <h1 style="margin-bottom: 30px">About</h1>
-            <h4>Personal Info</h4>
-            <table>
-              <tr>
-                <th class="subhead">ชื่อ</th>
-                <th class="subhead">ชื่อเล่น</th>
-                <th class="subhead">เพศ</th>
-              </tr>
-              <tr>
-                <td>คณาพงษ์ ศิริประชัย</td>
-                <td>แบงค์/คะน้า</td>
-                <td>ชาย</td>
-              </tr>
-              <tr>
-                <td class="subhead">Eve</td>
-                <td class="subhead">Jackson</td>
-                <td class="subhead">94</td>
-              </tr>
-            </table>
-            <!-- <div class="row">
-              <div class="col-sm-3">
-                <p class="subhead">ชื่อ<i class="bi bi-telephone-fill"></i></p>
-                <p style="margin-bottom: 5px;">คณาพงษ์ ศิริประชัย</p>
-                <p class="subhead">ชื่อเล่น<i class="bi bi-telephone-fill"></i></p>
-                <p style="margin-bottom: 5px;">แบงค์/คะน้า</p>
-                <p class="subhead">เพศ<i class="bi bi-telephone-fill"></i></p>
-                <p style="margin-bottom: 5px;">ชาย</p>
-                <p class="subhead">วัน/เดือน/ปีเกิด<i class="bi bi-telephone-fill"></i></p>
-                <p style="margin-bottom: 5px;">3 มีนาคม พ.ศ.2543</p>
-              </div>
-            </div> -->
+          <div class="col-lg-8" style="background: #12253f">
+            <div style="color: white; padding-left: 30px; padding-right: 30px">
+              <h1 style="color: #fcae1e; padding-bottom: 30px">About</h1>
+              <h2 style="font-family: ThaiSansNeue-Black; color: #ec9706">
+                Kanapong Siriprachai
+              </h2>
+              <h4 style="font-family: ThaiSansNeue-Bold; color: #ec9706">
+                Game Developer
+              </h4>
+              <p>
+                &emsp;&emsp;"ผมชื่อคณาพงษ์ ศิริประชัย ชื่อเล่นชื่อแบงค์/คะน้า
+                ขณะนี้กำลังศึกษาที่สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง
+                ปริญญาตรี ชั้นปี 3 คณะเทคโนโลยีสารสนเทศ สาขาเทคโนโลยีสารสนเทศ
+                แขนงมัลติมีเดีย ผมมีความชื่นชอบในด้านการพัฒนาเกม เพราะ
+                ผมรู้สึกเหมือนกำลังสร้างโลกใบใหม่จากจินตนาการของผม
+                และผมมีความต้องการที่จะแบ่งบันโลกใบนั้นให้ทุกคนได้เล่นกันครับ"
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="SkillSection">
+      <div class="container-fluid">
+        <h1 style="margin-bottom: 30px">Skills</h1>
+        <div style="width: 70%; margin: auto auto 50px auto; color: gray">
+          <div class="row" style="text-align: center">
+            <div class="col-lg">
+              <i class="fas fa-gamepad fa-3x"></i>
+              <h4>Game Developing</h4>
+              <p>
+                สามารถพัฒนาเกมได้ด้วยเครื่องมือต่างๆ เช่น Unreal Engine, Python,
+                HTML
+              </p>
+            </div>
+            <div class="col-lg">
+              <i class="fas fa-cube fa-3x"></i>
+              <h4>3D Modeling</h4>
+              <p>สามารถปั้นโมเดล 3 มิติได้ด้วย Maya และ ZBrush</p>
+            </div>
+            <div class="col-lg">
+              <i class="fas fa-paint-brush fa-3x"></i>
+              <h4>2D Art</h4>
+              <p>
+                สามารถวาดภาพ 2 มิติได้ทั้งในรูปแบบของ Digital art และ Pixel art
+              </p>
+            </div>
+            <div class="col-lg">
+              <i class="fas fa-language fa-3x"></i>
+              <h4>Language</h4>
+              <p>สามารถใช้ภาษาไทยและอังกฤษในการสื่อสารได้</p>
+            </div>
           </div>
         </div>
       </div>
@@ -125,8 +167,8 @@
 
     <!-- Projects -->
     <section id="ProjectSection">
-      <div class="container-fluid" style="background: #002D62; color: white;">
-        <h1>Projects</h1>
+      <div class="container-fluid" style="background: #002d62; color: white">
+        <h1 style="color: #fcae1e">Projects</h1>
         <p style="margin-bottom: 0px; padding-bottom: 30px; text-align: center">
           คลิกที่รูปภาพเพื่อดูรายละเอียดของโปรเจค
         </p>
@@ -196,7 +238,7 @@
     <section id="contactSection">
       <div class="container">
         <h1 style="margin-bottom: 30px">Contact</h1>
-        <div style="width: 70%; margin: auto auto 50px auto">
+        <div style="width: 70%; margin: auto auto 50px auto; color: gray">
           <div class="row">
             <div class="col-lg">
               <p class="subhead">
@@ -239,7 +281,7 @@
             ></a>
           </div>
         </div>
-        <p style="text-align: center">
+        <p style="text-align: center; color: gray">
           Kana's Port © 2021 Kanapong Siriprachai, All rights reserved.
         </p>
       </div>
